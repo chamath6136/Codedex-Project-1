@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Bites Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        header {
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        article {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        form p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="header-img" src="https://picsum.photos/seed/restaurant/400/200" alt="Tasty Bites Restaurant Header">
+        <h1>Tasty Bites Restaurant</h1>
+    </header>
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#order-form">Order Form</a>
+    </nav>
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <article>
+                <img src="https://picsum.photos/seed/burger/200/150" alt="Classic Burger">
+                <h3>Classic Burger</h3>
+                <p>A juicy beef patty with lettuce, tomato, and cheese on a sesame seed bun. Price: <i>$8.99</i></p>
+            </article>
+            <article>
+                <img src="https://picsum.photos/seed/pizza/200/150" alt="Margherita Pizza">
+                <h3>Margherita Pizza</h3>
+                <p>Traditional pizza with tomato sauce, mozzarella, and fresh basil. Price: <i>$10.99</i></p>
+            </article>
+            <article>
+                <img src="https://picsum.photos/seed/salad/200/150" alt="Caesar Salad">
+                <h3>Caesar Salad</h3>
+                <p>Crisp romaine lettuce with Caesar dressing, croutons, and parmesan cheese. Price: <i>$7.99</i></p>
+            </article>
+        </section>
+        <section id="order-form">
+            <h2>Place Your Order</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="burger_quantity">Classic Burger:</label>
+                    <input type="number" id="burger_quantity" name="burger_quantity" min="0" value="0">
+                </p>
+                <p>
+                    <label for="pizza_quantity">Margherita Pizza:</label>
+                    <input type="number" id="pizza_quantity" name="pizza_quantity" min="0" value="0">
+                </p>
+                <p>
+                    <label for="salad_quantity">Caesar Salad:</label>
+                    <input type="number" id="salad_quantity" name="salad_quantity" min="0" value="0">
+                </p>
+                <h3>Choose a Side Dish:</h3>
+                <p>
+                    <input type="radio" id="fries" name="side" value="fries">
+                    <label for="fries">Fries</label>
+                </p>
+                <p>
+                    <input type="radio" id="salad" name="side" value="salad">
+                    <label for="salad">Salad</label>
+                </p>
+                <h3>Add-ons:</h3>
+                <p>
+                    <input type="checkbox" id="extra_cheese" name="extra_cheese">
+                    <label for="extra_cheese">Extra Cheese ($1.00)</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="bacon" name="bacon">
+                    <label for="bacon">Bacon ($1.50)</label>
+                </p>
+                <p>
+                    <label for="special_requests">Special Requests:</label>
+                </p>
+                <textarea id="special_requests" name="special_requests" rows="4" cols="50"></textarea>
+                <p>
+                    <input type="submit" value="Go To Checkout">
+                </p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Made with love by [Your Codédex Username]</p>
+    </footer>
+</body>
+</html>
